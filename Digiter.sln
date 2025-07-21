@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36301.6 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Digiter", "Digiter\Digiter.csproj", "{8D221FED-074B-4BAB-8D8A-87CE78F5D88F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8D221FED-074B-4BAB-8D8A-87CE78F5D88F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8D221FED-074B-4BAB-8D8A-87CE78F5D88F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8D221FED-074B-4BAB-8D8A-87CE78F5D88F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8D221FED-074B-4BAB-8D8A-87CE78F5D88F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8021DF50-3C4A-4D33-9094-5244C3E136B1}
+	EndGlobalSection
+EndGlobal

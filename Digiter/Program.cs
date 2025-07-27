@@ -5,9 +5,9 @@ class Program
     static void Main(string[] args)
     {
         {
-            bool abc = true;
+            bool enabled = true;
 
-            while (true)
+            while (enabled)
             {
                 Console.WriteLine("Выбрать операцию: '+', '-', '/', '*'");
 
@@ -43,11 +43,11 @@ class Program
                 }
                 Console.WriteLine($"Результат: {result}");
 
-                Console.WriteLine("Продолжить? (yes/no)");
+                Console.WriteLine("Продолжить? (y/n)");
 
-                string abcd = Console.ReadLine().ToLower();
+                var enabledstring = Console.ReadLine().ToLower();
 
-                abc = (abcd == "yes");
+                enabled = (enabledstring == "y");               
             }
         }
     }

@@ -11,31 +11,31 @@ class Program
             {
                 Console.WriteLine("Выбрать операцию: '+', '-', '/', '*'");
 
-                var str = Console.ReadLine();
+                var choiceoperation = Console.ReadLine();
 
                 Console.WriteLine("Введите первое число");
 
-                var numfirst = double.Parse(Console.ReadLine());
+                var firstnumber = double.Parse(Console.ReadLine());
 
                 Console.WriteLine("Введите второе число");
 
-                var numsecond = double.Parse(Console.ReadLine());
+                var secondnumber = double.Parse(Console.ReadLine());
 
                 double result = 0;
 
-                switch (str)
+                switch (choiceoperation)
                 {
                     case "+":
-                        result = (numfirst + numsecond);
+                        result = (firstnumber + secondnumber);
                         break;
                     case "-":
-                        result = (numfirst - numsecond);
+                        result = (firstnumber - secondnumber);
                         break;
                     case "/":
-                        result = (numfirst / numsecond);
+                        result = (firstnumber / secondnumber);
                         break;
                     case "*":
-                        result = (numfirst * numsecond);
+                        result = (firstnumber * secondnumber);
                         break;
                     default:
                         Console.WriteLine("Ошибка");
@@ -45,9 +45,9 @@ class Program
 
                 Console.WriteLine("Продолжить? (y/n)");
 
-                var enabledstring = Console.ReadLine().ToLower();
+                var isEnabledUserInput = Console.ReadLine().ToLower();
 
-                enabled = (enabledstring == "y");               
+                enabled = (isEnabledUserInput == "y");               
             }
         }
     }

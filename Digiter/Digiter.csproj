@@ -7,4 +7,14 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Compile Remove="Digiter\obj\**" />
+    <EmbeddedResource Remove="Digiter\obj\**" />
+    <None Remove="Digiter\obj\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Digiter\" />
+  </ItemGroup>
+
 </Project>

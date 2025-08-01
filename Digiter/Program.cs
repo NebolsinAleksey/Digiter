@@ -32,7 +32,12 @@ class Program
                         result = (firstnumber - secondnumber);
                         break;
                     case "/":
+                        if (secondnumber != 0 )
                         result = (firstnumber / secondnumber);
+                        else
+                        {
+                            Console.WriteLine("Ошибка: деление на ноль!");
+                        }
                         break;
                     case "*":
                         result = (firstnumber * secondnumber);

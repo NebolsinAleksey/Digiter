@@ -33,7 +33,7 @@ class Program
                         break;
                     case "/":
                         if (secondnumber != 0 )
-                        result = (firstnumber / secondnumber);
+                            result = (firstnumber / secondnumber);
                         else
                         {
                             Console.WriteLine("Ошибка: деление на ноль!");
@@ -52,12 +52,8 @@ class Program
 
                 var isEnabledUserInput = Console.ReadLine().ToLower();
 
-                enabled = (isEnabledUserInput == "y");               
+                enabled = (isEnabledUserInput == "y");
             }
         }
     }
 }
-
-
-
-

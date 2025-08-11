@@ -8,13 +8,9 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Remove="Digiter\obj\**" />
-    <EmbeddedResource Remove="Digiter\obj\**" />
-    <None Remove="Digiter\obj\**" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="Digiter\" />
+    <Compile Remove="Digiter\**" />
+    <EmbeddedResource Remove="Digiter\**" />
+    <None Remove="Digiter\**" />
   </ItemGroup>
 
 </Project>

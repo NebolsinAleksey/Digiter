@@ -5,42 +5,37 @@ class Program
     static void Main(string[] args)
     {
         {
-            bool enabled = true;
+            bool isEnabled = true;
 
-            while (enabled)
+            while (isEnabled)
             {
-                Console.WriteLine("Выбрать операцию: '+', '-', '/', '*'");
-
-                var choiceoperation = Console.ReadLine();
-
                 Console.WriteLine("Введите первое число");
 
-                var firstnumber = double.Parse(Console.ReadLine());
+                var firstbody = double.Parse(Console.ReadLine());
+
+                Console.WriteLine("Выбрать операцию: '+', '-', '/', '*'");
+
+                var choiceOperation = Console.ReadLine();
 
                 Console.WriteLine("Введите второе число");
 
-                var secondnumber = double.Parse(Console.ReadLine());
+                var secondbody = double.Parse(Console.ReadLine());
 
                 double result = 0;
 
-                switch (choiceoperation)
+                switch (choiceOperation)
                 {
                     case "+":
-                        result = (firstnumber + secondnumber);
+                        result = firstbody + secondbody;
                         break;
                     case "-":
-                        result = (firstnumber - secondnumber);
+                        result = firstbody - secondbody;
                         break;
                     case "/":
-                        if (secondnumber != 0 )
-                            result = (firstnumber / secondnumber);
-                        else
-                        {
-                            Console.WriteLine("Ошибка: деление на ноль!");
-                        }
+                        result = firstbody / secondbody;                      
                         break;
                     case "*":
-                        result = (firstnumber * secondnumber);
+                        result = firstbody * secondbody;
                         break;
                     default:
                         Console.WriteLine("Ошибка");
@@ -52,7 +47,7 @@ class Program
 
                 var isEnabledUserInput = Console.ReadLine().ToLower();
 
-                enabled = (isEnabledUserInput == "y");
+                isEnabled = (isEnabledUserInput == "y");
             }
         }
     }

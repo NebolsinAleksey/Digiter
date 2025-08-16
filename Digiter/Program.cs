@@ -11,32 +11,32 @@ class Program
             {
                 Console.WriteLine("Введите первое число");
 
-                var firstbody = double.Parse(Console.ReadLine());
+                var firstNumber = double.Parse(Console.ReadLine());
 
                 Console.WriteLine("Выбрать операцию: '+', '-', '/', '*'");
 
-                var choiceOperation = Console.ReadLine();
+                var selectOperation = Console.ReadLine();
 
                 Console.WriteLine("Введите второе число");
 
-                var secondbody = double.Parse(Console.ReadLine());
+                var secondNumber = double.Parse(Console.ReadLine());
 
                 double result = 0;
 
-                switch (choiceOperation)
+                switch (selectOperation)
                 {
                     case "+":
-                        result = firstbody + secondbody;
+                        result = firstNumber + secondNumber;
                         break;
                     case "-":
-                        result = firstbody - secondbody;
+                        result = firstNumber - secondNumber;
                         break;
                     case "/":
-                        result = firstbody / secondbody;                      
+                        result = firstNumber / secondNumber;                      
                         break;
                     case "*":
-                        result = firstbody * secondbody;
-                        break;
+                        result = firstNumber * secondNumber;
+                        break;  
                     default:
                         Console.WriteLine("Ошибка");
                         break;

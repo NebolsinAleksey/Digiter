@@ -15,7 +15,7 @@ class Program
 
                 Console.WriteLine("Выбрать операцию: '+', '-', '/', '*'");
 
-                var selectOperation = Console.ReadLine();
+                var selectExpression = Console.ReadLine();
 
                 Console.WriteLine("Введите второе число");
 
@@ -23,7 +23,7 @@ class Program
 
                 double result = 0;
 
-                switch (selectOperation)
+                switch (selectExpression)
                 {
                     case "+":
                         result = firstNumber + secondNumber;
